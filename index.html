@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/tailwind.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="container flex items-center justify-between h-16 md:h-20">
+            <!-- <h1 class="relative z-30 font-semibold text-2xl">UNG</h1> -->
+            <div class="py-5 text-primary-orange font-bold text-3xl">
+                <a href="#home"> 
+                    <span class="text-primary">Giffty</span>babe.</a>
+        </div>
+            <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+
+                <!-- Menu List -->
+                <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                    <a class="nav-link" href="#blog">Blog</a>
+                    <li><button class="bg-primary-orange px-9 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                        <a href="#contact">Contact</a></button></li>
+                    <!-- <a class="nav-link" href="#contact">Contact</a> -->
+                </ul>
+
+                <!-- MOobile Menu Button -->
+                <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+                    <img src="images/icons/icon-menu.svg" alt="menu">
+                </button>
+
+                <!-- Toggle Theme -->
+                <button id="toggle-theme" class="relative z-30 dark:invert">
+                    <img class="md:opacity-70 w-7 md:-mt-1" src="images/icons/icon-dark.svg" alt="theme">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="container">
+
+        <!-- Home Section -->   
+        <section id="home" class="home-section">
+            <div class="order-2 md:order-1 mt-10">
+                <h2 class="text-5xl md:text-7xl font-bold">
+                    Hi,
+                </h2>
+                <h2 class="text-4xl md:text-6xl font-bold leading-snug mt-2">
+                    I am <span class="text-primary-orange">Uloka Ngozi.</span>
+                </h2>
+                <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">
+                    Frontend Developer
+                </h3>
+                <a href="https://drive.google.com/file/d/1sqsJyN8roH3c9fgjlAgnXH9yCJuTrwI3/view?usp=sharing" target="_blank" class="btn-primary">Resume
+                </a>
+            </div>
+            <div class="container-hero-image">
+                <img 
+                    class="w-full h-full object-cover opacity-90 object-center"
+                    src="images/others/bg.jpeg" 
+                    alt="profile" 
+                >
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32">
+
+            <!-- Description -->
+        <div class="flex flex-col md:flex-row items-center gap-10 md:gap-20">
+            <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary">
+                <img 
+                    class="w-full h-full object-cover opacity-90"
+                    src="images/others/giffted.jpeg" 
+                    alt="profile"
+                >
+            </div>
+            <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left"> 
+                <h2 class="text-primary font-bold text-2xl md:text-3xl mb-3">
+                    Hello there! 👋 I'm Uloka Ngozi 
+                </h2>
+                <p class="mb-3 opacity-50">
+                   A passionate and creative Frontend Developer. I excel in crafting exceptional user experiences through my expertise in HTML, CSS, and JavaScript. Continuously learning and staying updated with the latest trends, I strive to deliver cutting-edge solutions that leave a lasting impression.
+
+Collaboration and attention to detail define my approach, and I value teamwork as the key to successful projects. 
+                </p>
+                <p class="opacity-50">
+                    Beyond coding, I have a keen interest in UI/UX design and graphic arts, which inspire my frontend development work.
+
+My ultimate goal is to make a positive impact on people's lives through technology, creating meaningful digital experiences that delight users. 
+                </p>
+            </div>
+        </div>
+
+        <!-- My Skills -->
+        <div class="mt-32 text-center">
+            <h2 class="text-primary text-3xl md:text-4xl font-bold mb-14">
+                My Skills
+            </h2>
+            <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+                <div class="skill" data-text="Proficient">
+                    <img class="w-16" src="images/skills/html.png" alt="html">
+                </div>
+            <div class="skill" data-text="Proficient">
+                <img class="w-16" src="images/skills/css.png" alt="css">
+            </div>
+            <div class="skill" data-text="Proficient">
+                <img class="w-16" src="images/skills/javascript.png" alt="javaScript">
+            </div>
+            <div class="skill" data-text="Skilled">
+                <img class="w-16" src="images/skills/tailwindcss.png" alt="tailwind">
+            </div>
+            <div class="skill" data-text="Competent">
+                <img class="w-16" src="images/skills/vuejs.png" alt="vuejs">
+            </div>
+            <div class="skill" data-text="Skilled">
+                <img class="w-16" src="images/skills/reactjs.png" alt="reactjs">
+            </div>
+        </div>
+        </div>
+    </div>
+        </div>
+    </section>
+
+    <!-- Dots -->
+    <div class="hidden md:flex items-center justify-between gap-3 w-full">
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+    </div>
+
+  
+
+
+      <!-- Dots -->
+      <div class="hidden md:flex items-center justify-between gap-3 w-full">
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+    </div>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="pt-20">
+        <h2 class="portfolio-heading">
+            My Portfolio
+        </h2>
+        <ul class="w-full md:w-5/6 space-y-10 py-5">
+
+            <!-- Portfolio List -->
+            <li class="portfolio-card">
+                <div class="w-full md:w-1/3 h-60">
+                    <img class="h-full w-full object-cover" src="images/others/pro1.jpeg" alt="portfolio">
+                </div>
+                <div class="w-full md:w-2/3 p-5">
+                    <h2 class="text-3xl font-bold mb-3">
+                        Music Player
+                    </h2>
+                    <p>A sleek and intuitive music player crafted with HTML, CSS, and JavaScript, designed to deliver an immersive musical experience. With an array of interactive features, 
+                        <br> that allows play, pause, skip tracks, and adjust volume. 
+                    </p>
+                    <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                        <a href="https://github.com/Gifftybabe/30DaysOfCode.git" target="_blank" class="portfolio-link bg-primary">
+                            <img class="w-5 h-5" src="images/icons/github.svg" alt="github">
+                            Github
+                        </a>
+                        <a href="https://30days-challenge-music-player.netlify.app/" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                            <img class="w-5 h-5" src="images/icons/web.svg" alt="website">
+                            website
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="portfolio-card">
+                <div class="w-full md:w-1/3 h-60">
+                    <img class="h-full w-full object-cover" src="images/others/pro2.jpeg" alt="portfolio">
+                </div>
+                <div class="w-full md:w-2/3 p-5">
+                    <h2 class="text-3xl font-bold mb-3">
+                        BMI Calculator
+                    </h2>
+                    <p>Built with HTML and CSS, this nifty tool allows you to assess your Body Mass Index effortlessly. 
+                        <br> Simply input your weight and height, and the calculator will do the rest, giving you valuable insights into your health and fitness.
+                    </p>
+                    <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                        <a href="https://github.com/Gifftybabe/30DaysOfCode.git" target="_blank" class="portfolio-link bg-primary">
+                            <img class="w-5 h-5" src="images/icons/github.svg" alt="github">
+                            Github
+                        </a>
+                        <a href="https://30days-challenge-bmi-calculator.netlify.app/" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                            <img class="w-5 h-5" src="images/icons/web.svg" alt="website">
+                            website
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="portfolio-card">
+                <div class="w-full md:w-1/3 h-60">
+                    <img class="h-full w-full object-cover" src="images/others/pro3.jpeg" alt="portfolio">
+                </div>
+                <div class="w-full md:w-2/3 p-5">
+                    <h2 class="text-3xl font-bold mb-3">
+                        Digital Clock
+                    </h2>
+                    <p>
+                        This captivating timepiece not only displays the current time with precision but also boasts a smart alarm and notification system to keep you on track. 
+                        <br> This clock also greets you with a warm message based on the time of day, making every interaction feel personalized and delightful.
+
+
+                    </p>
+                    <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                        <a href="https://github.com/Gifftybabe/30DaysOfCode.git" target="_blank" class="portfolio-link bg-primary">
+                            <img class="w-5 h-5" src="images/icons/github.svg" alt="github">
+                            Github
+                        </a>
+                        <a href="https://30days-challenge-digital-clock.netlify.app/" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                            <img class="w-5 h-5" src="images/icons/web.svg" alt="website">
+                            website
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+       <!-- Dots -->
+       <div class="hidden md:flex items-center justify-between gap-3 w-full mt-20">
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+    </div>
+
+      <!-- Testimonial Section -->
+
+    <section id="testimonial">
+        <div class="container py-32">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h2 class="text-primary text-3xl md:text-4xl font-bold mb-14">
+                    Endorsement
+                </h2>
+                <h1 class="title">What People Are Saying</h1>
+            </div>
+
+            <!-- Review Container -->
+            <div class="mt-8">
+                <div class="flex items-center justify-center flex-wrap">
+                    <img src="images/reviews/Chiamaka 20230502_111303.jpg" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic" onclick="showReview(0)">
+                    <img src="images/reviews/NJ 20230409_065809.jpg" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview(1)">
+                    <img src="images/reviews/Screenshot_20230731-023157.jpg" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview(2)">
+                    <img src="images/reviews/Screenshot_20230731-023225.jpg" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview(3)">
+                    <img src="images/reviews/Screenshot_20230731-023333.jpg" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview(4)">
+                </div>
+
+                <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+                    <div class="user-text active-text">
+                        <p class="md:text-2xl mb-6">My dear sister Ngozi has always been an incredible inspiration to our family. <br> 
+                            Watching her embark on her journey as a web developer has been nothing short of amazing. She pours her heart and soul into every project, bringing creativity and innovation to life with her coding skills.</p>
+                        <h4 class="font-bold text-primary-orange mb-1">Uloka Maryann</h4>
+                        <p>Accountant</p>
+                    </div>
+                    <div class="user-text">
+                        <p class="md:text-2xl mb-6">As a backend developer, I greatly appreciate how effortlessly Ngozi
+                            integrates our backend functionalities into her frontend designs, creating a harmonious and cohesive product.</p>
+                        <h4 class="font-bold text-primary-orange mb-1">Johnson Akpan</h4>
+                        <p>PHP Developer</p>
+                    </div>
+                    <div class="user-text">
+                        <p class="md:text-2xl mb-6">Beyond her technical skills, Ngozi is patient, kind, and always willing to explain things in a way that even non-tech-savvy people like me can understand.
+                            <br> I highly recommend my friend Ngozi to anyone in need of a talented and creative frontend developer.</p>
+                        <h4 class="font-bold text-primary-orange mb-1">Eseoghene Ibiri</h4>
+                        <p>Accountant</p>
+                    </div>
+                    <div class="user-text">
+                        <p class="md:text-2xl mb-6">Even as a non-tech person, I could easily recognize the talent and expertise Ngozi
+                            brings to the table. I have no doubt that she will continue to excel in her career as a frontend developer and make a significant impact in the industry
+                        </p>
+                        <h4 class="font-bold text-primary-orange mb-1">Judith Udeh</h4>
+                        <p>HR. Charitos</p>
+                    </div>
+                    <div class="user-text">
+                        <p class="md:text-2xl mb-6">Working with Ngozi has been a delightful experience as she is always willing to lend a helping hand and share her knowledge with the team. 
+                            Her commitment to excellence and attention to detail make her a valuable asset to any development team.</p>
+                        <h4 class="font-bold text-primary-orange mb-1">Victor Adeoye</h4>
+                        <p>Frontend Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Dots -->
+       <div class="hidden md:flex items-center justify-between gap-3 w-full">
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-primary/60 h-3 w-4"></div>
+        <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+    </div>
+
+    <section id="blog">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h4 class="text-primary text-3xl md:text-4xl font-bold mb-14">Insights & Updates</h4>
+                <h1 class="title">Insightful articles to fuel your curiosity and knowledge</h1>
+            </div>
+
+            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Card no 1 -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="images/others/chat.jpeg" alt="" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-5 py-5">
+                                <p>15th June 2023</p>
+                                <p>4 min read</p>
+                            </div>
+        
+                            <a href="#blog" class="text-2xl font-bold underline hover:text-primary-orange hover:no-underline">Journey to Building an Innovative Chat App: Trials, Learnings</a>
+                            <p class="leading-relaxed my-5">Embarking on the development of a chat app was an exciting yet challenging journey...
+                            <a href="https://medium.com/@ulokangozi/finding-purpose-anew-reigniting-passion-on-the-path-to-tech-ebfcd250d429" target="_blank" class="inline-block font-bold hover:text-primary-orange transition-all duration-300 ease-in-out">
+                                <span class="tracking-wider capitalize underline hover:no-underline">Read More</span>
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+
+                          <!-- Card no 2 -->
+                <div>
+                    <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                        <img src="images/others/tiide.jpg" alt="" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-5 py-5">
+                            <p>18th May 2023</p>
+                            <p>4 min read</p>
+                        </div>
+    
+                        <a href="#" class="text-2xl font-bold underline hover:text-primary-orange hover:no-underline">Finding Purpose Anew: Reigniting Passion on the Path to Tech</a>
+                        <p class="leading-relaxed my-5">As I gazed at the computer screen, my mind was clouded with frustration and disillusionment...
+                        <a href="https://medium.com/@ulokangozi/title-journey-to-building-an-innovative-chat-app-trials-learnings-and-accomplishments-8ab66155a5a2" target="_blank" class="inline-block font-bold hover:text-primary-orange transition-all duration-300 ease-in-out">
+                            <span class="tracking-wider capitalize underline hover:no-underline">Read More</span>
+                        </a>
+                        </p>
+                    </div>
+                </div>
+
+                             <!-- Card no 3 -->
+                             <div>
+                                <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                                    <img src="images/others/google.jpeg" alt="" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-5 py-5">
+                                        <p>16th April 2023</p>
+                                        <p>7 min read</p>
+                                    </div>
+                
+                                    <a href="#" class="text-2xl font-bold underline hover:text-primary-orange hover:no-underline">What happens when you type google.com in your browser and press Enter</a>
+                                    <p class="leading-relaxed my-5">This question is a classic and still widely used interview question for many types of software engineering position...
+                                    <a href="https://medium.com/@ulokangozi/what-happens-when-you-type-google-com-in-your-browser-and-press-enter-b474ce0b9558" target="_blank" class="inline-block font-bold hover:text-primary-orange transition-all duration-300 ease-in-out">
+                                        <span class="tracking-wider capitalize underline hover:no-underline">Read More</span>
+                                    </a>
+                                    </p>
+                                </div>
+                            </div>
+            </div>
+        </div>
+
+        
+    </section>
+    
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full text-center mt-40 bg-white dark:bg-primary-gray">
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container py-10">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <!-- <h4 class="font-bold text-color-secondary mb-4">Have A Questation</h4> -->
+                    <h1 class="title">Get In Touch</h1>
+                </div>
+                <form>
+                    <div class="w-full m-auto text-center md:w-2/3">
+                        <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+                            <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Name">
+                <input type="email" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Email">
+                <input type="tel" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Phone">
+                <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Company">
+                        </div>
+                        <textarea rows="4" class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Message"></textarea>
+                        <button class="btn-primary mt-10">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="flex flex-col gap-12 justify-center items-center py-2">
+            <!-- <h2 class="text-4xl md:text-5xl font-bold text-primary">
+                Contact
+            </h2> -->
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+                <a href="https://web.facebook.com/" target="_blank" class="contact-link bg-blue-500">
+                    <img src="images/icons/icon-facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/gifftybabe/" target="_blank" class="contact-link bg-pink-500">
+                    <img src="images/icons/icon-instagram.svg" alt="instagram">
+                </a>
+                <a href="#" class="contact-link bg-blue-600">
+                    <img src="images/icons/icon-telegram.svg" alt="telegram">
+                </a>
+                <a href="https://twitter.com/Gifftybabe" target="_blank" class="contact-link bg-blue-400">
+                    <img src="images/icons/icon-twitter.svg" alt="twitter">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=2347082540464" target="_blank" class="contact-link bg-green-400">
+                    <img src="images/icons/icon-whatsapp.svg" alt="whatsapp">
+                </a>
+            </div>
+        </section>
+        <h2 class="pb-10">
+            &copy; Copyright 2023 - UNG
+        </h2>
+    </footer>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
